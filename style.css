@@ -1,0 +1,355 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden
+}
+
+.home{
+    background-color: rgb(201, 201, 201);
+    width: 57.5px;
+    height: 60px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: ;
+}
+
+.home > img{
+    width: 40px;
+    margin: 10px;
+    z-index: 1;
+}
+
+.home > img:hover{
+    cursor: pointer;
+    transition: all .4s ease-in;
+    width: 43px;
+}
+
+
+.home-sup{
+    background-color: rgb(201, 201, 201);
+    width: 100%;
+    height: 60px;
+    border-bottom: 3px solid black;
+    margin-left: 57.5px;
+}
+
+.home-sup > div > input[type="text"]{
+    margin: 10px;
+    position: relative;
+    top: 5px;
+    left: 5%;
+    width: 300px;
+    height: 30px;
+    padding: 10px;
+    border-radius: 8px;
+    transition: all .5s linear;
+    border: 2px solid silver;
+    box-shadow: 0 0 5px rgb(80, 80, 80);
+}
+
+.home-sup > div > input[type="text"]:hover{
+    width: 700px;
+    left: 1%;
+    transition: all .5s linear;
+}
+
+.lateral{
+    width: 100%;
+    height: 800px;
+    display: flex;
+}
+
+.content-lateral{
+    background-color: rgb(201, 201, 201);
+    width: 60px;
+    height: 100%;
+    border-right: 3px solid black;
+}
+
+.content-lateral > ul{
+    margin: 10px;
+    position: relative;
+    top: 5%;
+    margin-bottom: 10px;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.content-lateral ul li a i{
+    font-size: 24px;
+    margin: 10px;
+    position: relative;
+    left: -10px;
+}
+
+.content-lateral ul li a i:hover{
+    cursor: pointer;
+    transform: translateX(5px) rotate(5deg);
+}
+
+
+.container{
+    position: absolute;
+    left: 100px;
+    top: 80px;
+    display: flex;
+    flex-wrap:wrap;
+}
+
+.content-container{
+    position: relative;
+    float: right;
+    right: 120px;
+    top: 10px;
+    background-color: antiquewhite;
+    width: 140px;
+    height: 30px;
+    border-radius: 3px;
+    text-align: center;
+    padding: 5px;
+    cursor: pointer;
+    border: 3px solid rgb(80, 80, 80);
+}
+
+.content-container:hover{
+    box-shadow: 0 0 18px grey;
+}
+
+.container > div ul li{
+    list-style-type: none;
+}
+
+.container > div > ul li a i{
+    font-size: 150px;
+    position: relative;
+    left: 13px;
+    margin: 20px;
+    color: rgb(44, 39, 39);
+    cursor: pointer;
+}
+
+.cliente{
+    background-color: rgba(0, 0, 0, 0.662);
+    position: absolute;
+    z-index: 5;
+    width: 100%;
+    height: 100%;
+
+    display: none;
+}
+
+
+.infos-clientes{
+    background-color: rgb(255, 255, 255);
+    z-index: 6;
+    width: 900px;
+    height: 600px;
+    border-radius: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.859);
+}
+
+@keyframes abrir_Clientes{
+    from{
+        top: 100%;
+        opacity:1;
+    }
+}
+
+
+
+.cliente .infos-clientes{
+    animation: abrir_Clientes .8s ease-in-out;
+}
+
+
+.infos-clientes > label{
+    font-size: 25px;
+    font-weight: bold;
+    display:flex;
+    margin: 20px;
+    position: relative;
+    left: 35%;
+}
+
+.infos-clientes > img{
+    width: 260px;
+    margin: 1%;
+}
+
+.infos-clientes > .close{
+    position: absolute;
+    right: 0;
+    margin: 20px;
+    top: 0;
+    background-color: gray;
+    width: 30px;
+    height: 30px;
+    padding: 2px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.infos-clientes > .close:hover{
+    background-color: rgb(157, 157, 157);
+    transition: all .5s linear;
+}
+
+
+.cliente > .inputs{
+    display: flex;
+}
+
+.inputs > form > input{
+    border-radius: 8px;
+    padding: 10px;
+    width: 300px;
+    height: 40px;
+    box-shadow: 0 0 2px black;
+    border: none;
+}
+
+
+.inputs > form > input[name='Nome']{
+    display: inline;
+    position: absolute;
+    top: 120px;
+    left: 250px;
+}
+
+.inputs > form > input[name='Segundo_Nome']{
+    display: inline;
+    position: absolute;
+    top: 180px;
+    left: 480px;
+}
+
+.inputs > form > input[name='CPF'], input[name='RG']{
+    position: relative;
+    left: 150px;
+    margin: 10px;
+}
+
+.inputs > form > input[name='data'], input[name='contato']{
+    position: relative;
+    left: 30px;
+    margin: 10px;
+}
+
+.inputs > form > input[name='email']{
+    position: relative;
+    float: right;
+    margin: 10px;
+    right: 100px;
+}
+
+.inputs > form > input[name='adress'], input[name='N°']{
+    margin: 10px;
+    left: 30px;
+    position: relative;
+    
+}
+
+.inputs > input[name='N°']{
+    width: 90px;
+}
+
+.cadastrar{
+    background-color: rgb(99, 211, 241);
+    width: 220px;
+    height: 40px;
+    text-align: center;
+    position: relative;
+    left: 120px;
+    top: 35px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all .3s ease-out;
+}
+
+.cadastrar > a{
+    font-size: 25px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+}
+
+.cadastrar:hover{
+    background-color: aqua;
+    box-shadow: 0 0 6px grey;
+    width: 223px;
+    transition: all .3s ease-out;
+}
+
+.items{
+    width: 200px;
+    height: 400px;
+    background-color: rgb(222, 222, 222);
+    z-index: 3;
+    border-radius: 20px;
+    box-shadow: 0 0 4px grey;
+    margin: 10px;
+    position: relative;
+    top: -10px;
+    margin-right: 15px;
+    display: inline-block;
+    text-align: center;
+}
+
+.items:hover{
+    box-shadow: 0 0 8px grey;
+    cursor: pointer;
+}
+
+.items > label{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 120px;
+    margin: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#clientes_Cadastrados{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: start;
+}
+
+.novoCliente > label{
+    font-size: 205px;
+}
+
+#clientes_Cadastrados .items label{
+    font-size: 20px;
+    font-weight: 600;
+    color: rgb(102, 102, 102);
+    position: relative;
+    top: 150px;
+}
+
+#clientes_Cadastrados .items h1{
+    font-size: 23px;
+    position: relative;
+    top: 160px;
+    left: -55px;
+    font-family:monospace;
+    line-height: 10px;
+    color: black;
+}
+

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="style.css" rel="stylesheet">
+    <title>Registro</title>
+</head>
+<body>
+
+    <main id="cliente" class="cliente">
+        <div class="infos-clientes">
+            <label>Cadastrar Cliente</label>
+            <a id="close" class="close">X</a>
+            <img src="/imgs/png-transparent-computer-icons-businessperson-others-miscellaneous-fictional-character-glasses.png">
+
+            <div class="inputs">
+                <form id="cadastroForm">
+                    <input id="nome" type="text" name="Nome" placeholder="Nome...">
+                    <input id="sobrenome" type="text" name="Segundo_Nome" placeholder="SobreNome...">
+                    <input id="cpf" type="number" name="CPF" placeholder="CPF">
+                    <input id="rg" type="number" name="RG" placeholder="RG">
+                    <input id="data" type="date" name="data" placeholder="Data de Nascimento">
+                    <input id="contato" type="number" name="contato" placeholder="Numero para contato">
+                    <input id="endereco" type="text" name="adress" placeholder="Endereço...">
+                    <input id="N°" type="number" name="N°" placeholder="Numero">
+                    <input id="email" type="email" name="email" placeholder="Gmail para contato">
+                </form>
+            </div>
+
+            <div class="cadastrar">
+                <a id="btn-cadastro">Cadastrar</a>
+            </div>
+
+        </div>
+    </main>
+    
+    <section>
+
+        <div class="home">
+            <img  src="/imgs/casa.png">
+        </div>
+
+        <nav class="home-sup">
+            <div class="tag-sup">
+                <input type="text" placeholder="Procurar Cliente..." />
+
+                
+            <div class="content-container">
+                <a id="add" class="add">Cadastrar Cliente</a>
+            </div>
+
+            </div>
+        </nav>
+
+        <div class="lateral">
+            <div class="content-lateral">
+                <ul>
+                    <li><a><i class="fa-solid fa-gears"></i></a></li>
+                    <li><a><i class="fa-solid fa-computer"></i></a></li>
+                    <li><a><i class="fa-duotone fa-solid fa-circle-info"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <main class="container">
+
+            <div id="clientes_Cadastrados">
+
+                <div class="items" style="display: none;">
+
+                </div>
+                </div>
+                
+            </div>
+            
+            
+            
+        </main>
+    </section>
+
+    <style>
+        
+    </style>
+
+    
+</body>
+
+<script src="/script.js"></script>
+</html>
